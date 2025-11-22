@@ -16,11 +16,13 @@ export const handleGetPosts: RequestHandler = async (req, res) => {
       const postData = await getPostWithThumbnail(postId);
       if (postData) {
         const mediaFiles = await listPostFiles(postId);
-        const mediaFileObjects = mediaFiles.map((fileName) => ({
-          name: fileName,
-          url: getMediaUrl(`posts/${postId}/${fileName}`),
-          type: fileName.endsWith(".json") ? "application/json" : "media",
-        })).filter((f) => f.name !== "metadata.json");
+        const mediaFileObjects = mediaFiles
+          .map((fileName) => ({
+            name: fileName,
+            url: getMediaUrl(`posts/${postId}/${fileName}`),
+            type: fileName.endsWith(".json") ? "application/json" : "media",
+          }))
+          .filter((f) => f.name !== "metadata.json");
 
         const post: Post = {
           id: postData.id,

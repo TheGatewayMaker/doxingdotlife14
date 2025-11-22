@@ -1,5 +1,10 @@
 import { RequestHandler } from "express";
-import { uploadMediaFile, uploadPostMetadata, getServersList, updateServersList } from "../utils/r2-storage";
+import {
+  uploadMediaFile,
+  uploadPostMetadata,
+  getServersList,
+  updateServersList,
+} from "../utils/r2-storage";
 
 interface UploadRequest {
   title: string;
@@ -11,7 +16,8 @@ interface UploadRequest {
 
 export const handleUpload: RequestHandler = async (req, res) => {
   try {
-    const { title, description, country, city, server } = req.body as UploadRequest;
+    const { title, description, country, city, server } =
+      req.body as UploadRequest;
     const file = req.file;
 
     if (!title || !description || !file) {
@@ -61,7 +67,9 @@ export const handleUpload: RequestHandler = async (req, res) => {
       });
     } catch (r2Error) {
       console.error("R2 upload error:", r2Error);
-      res.status(500).json({ error: "Upload to R2 failed - check environment variables" });
+      res
+        .status(500)
+        .json({ error: "Upload to R2 failed - check environment variables" });
     }
   } catch (error) {
     console.error("Upload error:", error);
