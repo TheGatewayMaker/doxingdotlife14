@@ -31,10 +31,10 @@ export default function Header() {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="font-black text-lg text-foreground hidden sm:inline">
+          <span className="font-black text-lg text-white hidden sm:inline">
             Doxing Dot Life
           </span>
-          <span className="font-black text-lg text-foreground sm:hidden">
+          <span className="font-black text-lg text-white sm:hidden">
             DDL
           </span>
         </Link>
