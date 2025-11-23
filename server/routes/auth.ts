@@ -94,7 +94,9 @@ export const handleCheckAuth: RequestHandler = async (req, res) => {
     const token = req.headers.authorization?.replace("Bearer ", "");
 
     if (!token) {
-      res.status(401).json({ authenticated: false, message: "No token provided" });
+      res
+        .status(401)
+        .json({ authenticated: false, message: "No token provided" });
       return;
     }
 
@@ -105,7 +107,9 @@ export const handleCheckAuth: RequestHandler = async (req, res) => {
       if (session) {
         sessions.delete(token);
       }
-      res.status(401).json({ authenticated: false, message: "Token expired or invalid" });
+      res
+        .status(401)
+        .json({ authenticated: false, message: "Token expired or invalid" });
       return;
     }
 
@@ -121,11 +125,11 @@ export const handleCheckAuth: RequestHandler = async (req, res) => {
 };
 
 // Middleware to verify authentication
-export const authMiddleware: (
-  req: any,
-  res: any,
-  next: any,
-) => void = (req, res, next) => {
+export const authMiddleware: (req: any, res: any, next: any) => void = (
+  req,
+  res,
+  next,
+) => {
   try {
     const token = req.headers.authorization?.replace("Bearer ", "");
 

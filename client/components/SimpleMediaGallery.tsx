@@ -64,7 +64,11 @@ export default function SimpleMediaGallery({
       setSelectedMediaIndex((prev) =>
         prev === mediaFiles.length - 1 ? 0 : prev + 1,
       );
-    } else if (e.key === "Escape" && isFullscreen && document.fullscreenElement) {
+    } else if (
+      e.key === "Escape" &&
+      isFullscreen &&
+      document.fullscreenElement
+    ) {
       document.exitFullscreen();
       setIsFullscreen(false);
     }
@@ -129,7 +133,9 @@ export default function SimpleMediaGallery({
                       setSelectedMediaIndex(idx);
                     }}
                     className={`relative group rounded-lg overflow-hidden border-2 transition-all hover:border-accent cursor-pointer block ${
-                      isSelected ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background" : "border-border hover:border-accent/70"
+                      isSelected
+                        ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background"
+                        : "border-border hover:border-accent/70"
                     }`}
                   >
                     <img
@@ -154,7 +160,9 @@ export default function SimpleMediaGallery({
                   <button
                     onClick={() => setSelectedMediaIndex(idx)}
                     className={`relative group rounded-lg overflow-hidden border-2 transition-all hover:border-accent cursor-pointer w-full ${
-                      isSelected ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background" : "border-border hover:border-accent/70"
+                      isSelected
+                        ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background"
+                        : "border-border hover:border-accent/70"
                     }`}
                   >
                     <div className="w-full aspect-square bg-muted flex items-center justify-center relative overflow-hidden">
@@ -177,7 +185,9 @@ export default function SimpleMediaGallery({
                   <button
                     onClick={() => setSelectedMediaIndex(idx)}
                     className={`relative group rounded-lg border-2 transition-all hover:border-accent cursor-pointer w-full ${
-                      isSelected ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background" : "border-border hover:border-accent/70"
+                      isSelected
+                        ? "border-accent ring-2 ring-accent ring-offset-2 ring-offset-background"
+                        : "border-border hover:border-accent/70"
                     }`}
                   >
                     <div className="w-full aspect-square bg-muted flex flex-col items-center justify-center gap-2 group-hover:bg-muted/80 transition-colors">

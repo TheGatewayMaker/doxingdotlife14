@@ -82,7 +82,11 @@ export function createServer() {
 
   // Admin routes (protected by auth middleware)
   app.delete("/api/posts/:postId", authMiddleware, handleDeletePost);
-  app.delete("/api/posts/:postId/media/:fileName", authMiddleware, handleDeleteMediaFile);
+  app.delete(
+    "/api/posts/:postId/media/:fileName",
+    authMiddleware,
+    handleDeleteMediaFile,
+  );
   app.put("/api/posts/:postId", authMiddleware, handleUpdatePost);
 
   // Media proxy endpoint for additional CORS support

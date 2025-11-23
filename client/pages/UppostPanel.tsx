@@ -252,7 +252,10 @@ export default function UppostPanel() {
         <div className="bg-gradient-to-br from-background via-card/50 to-background pt-8 pb-8 md:pt-16 md:pb-12 border-b border-border/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-0">
-              <div className="animate-fadeIn" style={{ animationDelay: "0.1s" }}>
+              <div
+                className="animate-fadeIn"
+                style={{ animationDelay: "0.1s" }}
+              >
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-3 text-foreground tracking-tighter leading-tight flex items-center gap-2">
                   <UploadIcon className="w-8 h-8 text-accent" />
                   Upload Panel
@@ -279,7 +282,6 @@ export default function UppostPanel() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-
           <form
             onSubmit={handleUpload}
             className="bg-card border border-border rounded-xl p-6 sm:p-8 md:p-10 space-y-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fadeIn"
