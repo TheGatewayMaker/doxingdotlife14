@@ -126,6 +126,7 @@ export default function EditPostModal({
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${authToken}`,
         },
         body: JSON.stringify({
           title: title.trim(),
