@@ -67,6 +67,9 @@ export default function MediaManagerModal({
         `/api/posts/${post.id}/media/${encodeURIComponent(deletingFileName)}`,
         {
           method: "DELETE",
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
         },
       );
 
