@@ -306,7 +306,15 @@ export default function UppostPanel() {
                 >
                   {thumbnail ? (
                     <div className="space-y-3">
-                      <div className="text-3xl">✓</div>
+                      <svg
+                        className="w-6 h-6 mx-auto text-accent"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
                       <p className="text-sm font-bold text-accent">
                         {thumbnail.name}
                       </p>
@@ -317,7 +325,7 @@ export default function UppostPanel() {
                     </div>
                   ) : (
                     <div className="space-y-3">
-                      <Image className="w-10 h-10 mx-auto text-muted-foreground" />
+                      <ImageIcon className="w-10 h-10 mx-auto text-muted-foreground" />
                       <p className="text-sm font-bold text-foreground">
                         Click to upload thumbnail
                       </p>
