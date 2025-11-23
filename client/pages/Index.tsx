@@ -563,8 +563,8 @@ export default function Index() {
 
                 {/* Server Dropdown */}
                 <div className="relative group">
-                  <label className="text-sm font-bold text-foreground block mb-3 flex items-center gap-2">
-                    <ServerIcon className="w-4 h-4 text-accent" />
+                  <label className="text-sm font-bold text-white block mb-3 flex items-center gap-2">
+                    <ServerIcon className="w-4 h-4 text-blue-400" />
                     By Server
                   </label>
                   <input
@@ -574,10 +574,10 @@ export default function Index() {
                     }
                     value={serverSearch}
                     onChange={(e) => setServerSearch(e.target.value)}
-                    className="w-full px-4 py-3 bg-card border border-border hover:border-accent/50 rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent text-sm transition-all shadow-sm hover:shadow-md"
+                    className="w-full px-4 py-3 bg-slate-800 border border-slate-700 hover:border-slate-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm transition-all shadow-sm hover:shadow-md"
                   />
                   {serverSearch && (
-                    <div className="absolute top-full left-0 right-0 mt-2 bg-card border border-border rounded-lg z-50 max-h-48 overflow-y-auto shadow-lg">
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg z-50 max-h-48 overflow-y-auto shadow-lg">
                       {filteredServers.length > 0 ? (
                         filteredServers.map((server) => (
                           <button
@@ -586,13 +586,13 @@ export default function Index() {
                               setSelectedServer(server);
                               setServerSearch("");
                             }}
-                            className="w-full text-left px-4 py-2 hover:bg-accent/20 text-foreground text-sm transition-colors"
+                            className="w-full text-left px-4 py-2 hover:bg-slate-700 text-white text-sm transition-colors"
                           >
                             {server}
                           </button>
                         ))
                       ) : (
-                        <div className="px-4 py-2 text-muted-foreground text-sm">
+                        <div className="px-4 py-2 text-gray-500 text-sm">
                           No servers found
                         </div>
                       )}
