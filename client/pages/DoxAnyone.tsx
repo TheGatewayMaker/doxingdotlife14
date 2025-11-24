@@ -14,7 +14,7 @@ export default function DoxAnyone() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
           {/* Header Section */}
           <div className="text-center mb-10 sm:mb-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-3 sm:mb-4 text-yellow-500">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black mb-3 sm:mb-4 text-blue-500">
               Dox Anyone
             </h1>
             <p className="text-base sm:text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
@@ -28,36 +28,36 @@ export default function DoxAnyone() {
               Service Pricing
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-yellow-500">
-                <p className="text-xs sm:text-sm font-semibold text-yellow-500 mb-2">
+              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-blue-500 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <p className="text-xs sm:text-sm font-semibold text-blue-400 mb-2">
                   PAKISTAN
                 </p>
-                <p className="text-2xl sm:text-3xl font-black text-yellow-500">
+                <p className="text-2xl sm:text-3xl font-black text-blue-500">
                   299
                 </p>
-                <p className="text-xs sm:text-sm text-yellow-500 font-semibold">
+                <p className="text-xs sm:text-sm text-blue-400 font-semibold">
                   PKR
                 </p>
               </div>
-              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-yellow-500">
-                <p className="text-xs sm:text-sm font-semibold text-yellow-500 mb-2">
+              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-blue-500 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <p className="text-xs sm:text-sm font-semibold text-blue-400 mb-2">
                   UNITED STATES
                 </p>
-                <p className="text-2xl sm:text-3xl font-black text-yellow-500">
+                <p className="text-2xl sm:text-3xl font-black text-blue-500">
                   1.10
                 </p>
-                <p className="text-xs sm:text-sm text-yellow-500 font-semibold">
+                <p className="text-xs sm:text-sm text-blue-400 font-semibold">
                   USD
                 </p>
               </div>
-              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-yellow-500">
-                <p className="text-xs sm:text-sm font-semibold text-yellow-500 mb-2">
+              <div className="bg-slate-900 rounded-lg p-5 sm:p-6 border border-blue-500 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <p className="text-xs sm:text-sm font-semibold text-blue-400 mb-2">
                   INDIA
                 </p>
-                <p className="text-2xl sm:text-3xl font-black text-yellow-500">
+                <p className="text-2xl sm:text-3xl font-black text-blue-500">
                   99
                 </p>
-                <p className="text-xs sm:text-sm text-yellow-500 font-semibold">
+                <p className="text-xs sm:text-sm text-blue-400 font-semibold">
                   INR
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function DoxAnyone() {
             <div className="space-y-5 sm:space-y-6">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-yellow-500 text-slate-900 font-bold text-sm sm:text-base">
+                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-blue-600 text-white font-bold text-sm sm:text-base hover:bg-blue-700 transition-colors">
                     1
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export default function DoxAnyone() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-yellow-500 text-slate-900 font-bold text-sm sm:text-base">
+                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-blue-600 text-white font-bold text-sm sm:text-base hover:bg-blue-700 transition-colors">
                     2
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default function DoxAnyone() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-yellow-500 text-slate-900 font-bold text-sm sm:text-base">
+                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-blue-600 text-white font-bold text-sm sm:text-base hover:bg-blue-700 transition-colors">
                     3
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function DoxAnyone() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-yellow-500 text-slate-900 font-bold text-sm sm:text-base">
+                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-blue-600 text-white font-bold text-sm sm:text-base hover:bg-blue-700 transition-colors">
                     4
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function DoxAnyone() {
 
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-yellow-500 text-slate-900 font-bold text-sm sm:text-base">
+                  <div className="flex items-center justify-center h-9 w-9 sm:h-10 sm:w-10 rounded-lg bg-blue-600 text-white font-bold text-sm sm:text-base hover:bg-blue-700 transition-colors">
                     5
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default function DoxAnyone() {
           <div className="text-center mt-6 sm:mt-8">
             <button
               onClick={handleDoxNow}
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-sm sm:text-base rounded-lg hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 active:scale-95"
             >
               Dox Now
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
